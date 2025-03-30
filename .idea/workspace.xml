@@ -4,15 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="777 - setup: create file structure of the backend" />
+    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="777 - setup: create file structure of the backend">
+      <change afterPath="$PROJECT_DIR$/backend/src/services/gameweekCalculator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/services/scraper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/466986fc-19d5-4d35-99cc-d56fbaf46ea7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/466986fc-19d5-4d35-99cc-d56fbaf46ea7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="1-feature-scraper" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Anyon1"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Anyon1/football-predictions.git",
+    "accountId": "75caa3cc-47d2-4df6-9a71-8f47fe913e06"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -22,25 +46,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Work&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;D:\\dev\\football-predictions\\backend\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;D:\\dev\\football-predictions\\backend\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "2-feature-gameweekCalculator",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/Work",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "D:\\dev\\football-predictions\\backend\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "org.jetbrains.plugins.github.ui.GithubSettingsConfigurable",
+    "ts.external.directory.path": "D:\\dev\\football-predictions\\backend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -60,6 +84,7 @@
       <workItem from="1743285765259" duration="5699000" />
       <workItem from="1743341541848" duration="7724000" />
       <workItem from="1743350705722" duration="106000" />
+      <workItem from="1743350829547" duration="8000000" />
     </task>
     <task id="LOCAL-00001" summary="777 - setup: create file structure of the backend">
       <option name="closed" value="true" />
@@ -69,7 +94,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743350121467</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="777 - setup: create file structure of the backend">
+      <option name="closed" value="true" />
+      <created>1743350897297</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743350897297</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
