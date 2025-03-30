@@ -1,0 +1,49 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = "file:./dev.db"
+}
+
+model ScrapedData {
+  id        Int      @id @default(autoincrement())
+  title     String
+  content   String
+  url       String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Gameweek {
+  id        Int      @id @default(autoincrement())
+  number    Int      @unique
+  startDate DateTime
+  endDate   DateTime
+  matches   Match[]
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Match {
+  id         Int      @id @default(autoincrement())
+  date       DateTime
+  homeTeam   String
+  awayTeam   String
+  status     Status
+  score      String?
+  homeXG     String?
+  awayXG     String?
+  gameweek   Gameweek @relation(fields: [gameweekId], references: [id])
+  gameweekId Int
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@unique([date, homeTeam, awayTeam])
+}
+
+enum Status {
+  COMPLETED
+  UPCOMING
+}
