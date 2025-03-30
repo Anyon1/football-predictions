@@ -85,7 +85,6 @@ async function storeGameweeksInDatabase() {
       },
     })
   }
-  return gameweeks
 }
 
 export { generateGameweeks, storeGameweeksInDatabase }
