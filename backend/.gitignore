@@ -2,4 +2,7 @@ node_modules
 
 .env
 
-*db.*
+/prisma/migrations
+/prisma/client
+
+*.db

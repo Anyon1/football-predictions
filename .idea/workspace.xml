@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="2 - feature: add gameweekCalculator as new feature">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="2 - refactor: remove extra code and fix some extra files">
       <change beforePath="$PROJECT_DIR$/backend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/services/gameweekCalculator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/gameweekCalculator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +32,9 @@
     &quot;accountId&quot;: &quot;75caa3cc-47d2-4df6-9a71-8f47fe913e06&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -108,7 +108,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743362462624</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="2 - refactor: remove extra code and fix some extra files">
+      <option name="closed" value="true" />
+      <created>1743363109923</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743363109923</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +140,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="777 - setup: create file structure of the backend" />
     <MESSAGE value="2 - feature: add gameweekCalculator as new feature" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 - feature: add gameweekCalculator as new feature" />
+    <MESSAGE value="2 - refactor: remove extra code and fix some extra files" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 - refactor: remove extra code and fix some extra files" />
   </component>
 </project>
