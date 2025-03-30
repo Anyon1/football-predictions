@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="777 - setup: create file structure of the backend">
-      <change afterPath="$PROJECT_DIR$/backend/src/services/gameweekCalculator.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/services/scraper.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/466986fc-19d5-4d35-99cc-d56fbaf46ea7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/466986fc-19d5-4d35-99cc-d56fbaf46ea7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/dev.db" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/dev.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.ts" afterDir="false" />
+    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="2 - feature: add gameweekCalculator as new feature">
+      <change beforePath="$PROJECT_DIR$/backend/src/services/gameweekCalculator.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/gameweekCalculator.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +79,7 @@
       <workItem from="1743285765259" duration="5699000" />
       <workItem from="1743341541848" duration="7724000" />
       <workItem from="1743350705722" duration="106000" />
-      <workItem from="1743350829547" duration="8000000" />
+      <workItem from="1743350829547" duration="8468000" />
     </task>
     <task id="LOCAL-00001" summary="777 - setup: create file structure of the backend">
       <option name="closed" value="true" />
@@ -102,7 +97,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743350897297</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="2 - feature: add gameweekCalculator as new feature">
+      <option name="closed" value="true" />
+      <created>1743362462624</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743362462624</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +128,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="777 - setup: create file structure of the backend" />
-    <option name="LAST_COMMIT_MESSAGE" value="777 - setup: create file structure of the backend" />
+    <MESSAGE value="2 - feature: add gameweekCalculator as new feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="2 - feature: add gameweekCalculator as new feature" />
   </component>
 </project>
