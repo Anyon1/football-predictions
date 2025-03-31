@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="1 - feature add scraper feature to get match data">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/services/scraper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/scraper.ts" afterDir="false" />
+    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="1 - fix: add more logging to see where the match date might be incorrect">
+      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,7 +84,7 @@
       <workItem from="1743350705722" duration="106000" />
       <workItem from="1743350829547" duration="8468000" />
       <workItem from="1743379633307" duration="1805000" />
-      <workItem from="1743381764223" duration="847000" />
+      <workItem from="1743381764223" duration="1063000" />
     </task>
     <task id="LOCAL-00001" summary="777 - setup: create file structure of the backend">
       <option name="closed" value="true" />
@@ -119,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1743363109923</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="1 - fix: add more logging to see where the match date might be incorrect">
+      <option name="closed" value="true" />
+      <created>1743382754727</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743382754727</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -145,6 +152,7 @@
     <MESSAGE value="2 - feature: add gameweekCalculator as new feature" />
     <MESSAGE value="2 - refactor: remove extra code and fix some extra files" />
     <MESSAGE value="1 - feature add scraper feature to get match data" />
-    <option name="LAST_COMMIT_MESSAGE" value="1 - feature add scraper feature to get match data" />
+    <MESSAGE value="1 - fix: add more logging to see where the match date might be incorrect" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 - fix: add more logging to see where the match date might be incorrect" />
   </component>
 </project>
