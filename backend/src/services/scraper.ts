@@ -35,9 +35,14 @@ async function scrapeAndStore(league: LeagueData) {
     for (const row of rows) {
       const $row = $(row)
 
-      const dateLink = $row.find('td:nth-child(3) a').text().trim()
+      // Extract the date from the correct column
+      const dateLink = $row.find('td[data-stat="date"] a').text().trim()
+
+      // Log the date to see what you're extracting
+      console.log('Extracted dateLink:', dateLink)
+
       if (!dateLink) {
-        console.log('Invalid date', dateLink)
+        console.log('Invalid date - Date is missing or empty')
         continue
       }
 
@@ -53,19 +58,34 @@ async function scrapeAndStore(league: LeagueData) {
       }
 
       if (!data.homeTeam || !data.awayTeam) {
+        console.log('Missing home or away team')
         continue
       }
 
       const dateParts = dateLink.split('-').map(Number)
-      if (dateParts.length !== 3) continue
+      if (dateParts.length !== 3) {
+        console.log('Invalid date format:', dateLink)
+        continue
+      }
+
       const [year, month, day] = dateParts
 
+      // Parse the time and ensure it's valid
       const timeParts = (time || '00:00').split(':').map(Number)
-      if (timeParts.length !== 2) continue
+      if (timeParts.length !== 2) {
+        console.log('Invalid time format:', time)
+        continue
+      }
+
       const [hours, minutes] = timeParts
 
+      // Create the match date
       const matchDate = new Date(Date.UTC(year, month - 1, day, hours, minutes))
 
+      // Log matchDate to ensure it's being correctly formed
+      console.log('Match Date:', matchDate)
+
+      // Find the gameweek for the match
       const gameweek = await prisma.gameweek.findFirst({
         where: {
           startDate: { lte: matchDate },
@@ -78,6 +98,7 @@ async function scrapeAndStore(league: LeagueData) {
         continue
       }
 
+      // Check if the match already exists
       const existingMatch = await prisma.match.findFirst({
         where: {
           date: matchDate,

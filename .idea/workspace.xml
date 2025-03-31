@@ -4,12 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="2 - refactor: remove extra code and fix some extra files">
+    <list default="true" id="8b21cdba-61d4-4b11-b64e-1b67c38f16f3" name="Changes" comment="1 - feature add scraper feature to get match data">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/backend/prisma/schema.prisma" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/server.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/services/scraper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/services/scraper.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +50,7 @@
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;1-feature-scraper&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Work&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -89,6 +85,7 @@
       <workItem from="1743350705722" duration="106000" />
       <workItem from="1743350829547" duration="8468000" />
       <workItem from="1743379633307" duration="1805000" />
+      <workItem from="1743381764223" duration="847000" />
     </task>
     <task id="LOCAL-00001" summary="777 - setup: create file structure of the backend">
       <option name="closed" value="true" />
@@ -147,6 +144,7 @@
     <MESSAGE value="777 - setup: create file structure of the backend" />
     <MESSAGE value="2 - feature: add gameweekCalculator as new feature" />
     <MESSAGE value="2 - refactor: remove extra code and fix some extra files" />
-    <option name="LAST_COMMIT_MESSAGE" value="2 - refactor: remove extra code and fix some extra files" />
+    <MESSAGE value="1 - feature add scraper feature to get match data" />
+    <option name="LAST_COMMIT_MESSAGE" value="1 - feature add scraper feature to get match data" />
   </component>
 </project>
