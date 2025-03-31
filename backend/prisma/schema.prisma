@@ -29,6 +29,7 @@ model Gameweek {
 model Match {
   id         Int      @id @default(autoincrement())
   date       DateTime
+  league     League
   homeTeam   String
   awayTeam   String
   status     Status
@@ -46,4 +47,9 @@ model Match {
 enum Status {
   COMPLETED
   UPCOMING
+}
+
+enum League {
+  PREMIER_LEAGUE
+  BUNDESLIGA
 }
